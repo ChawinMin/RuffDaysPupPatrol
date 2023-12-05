@@ -1,0 +1,13 @@
+var facts = [
+    'A dog\'s sense of smell is legendary, but did you know that their nose has as many as 300 million receptors? In comparison, a human nose has about 5 million.', 'A dog\'s nose print is unique, much like a person\'s fingerprint.', 'Dogs\' noses can sense heat and thermal radiation, which explains why blind or deaf dogs can still hunt.', 'Dogs curl up in a ball when sleeping to protect their organs — a holdover from their days in the wild, when they were vulnerable to predator attacks.', 'Human blood pressure goes down when petting a dog. And so does the dog\'s.', 'There are over 75 million pet dogs in the U.S. — more than in any other country.', 'All puppies are born deaf.', 'Dogs have about 1,700 taste buds. We humans have between 2,000 and 10,000.', 'When dogs kick backward after they go to the bathroom, it\'s not to cover it up, but to mark their territory, using the scent glands in their feet.', 'Dog\'s noses are wet to help them absorb scent chemicals! Their nose secretes a special mucus that helps to absorb these chemicals, and then they lick their noses to sample them, helping them understand what the smell is.', 'Dogs can understand and recognize up to 250 words and gestures, making them one of the most skilled species studied in these tasks. It has been suggested that, with training, some may even recognize and respond to more than 1,000 different words!', 'Dogs have an internal mechanism, called circadian rhythm, that helps them tell the time; such that they know when they\'re supposed to receive their food or when their owners are about to arrive home, even if their routine is disrupted.', 'Sweating is normal for dog, they will cool themselves down mainly by panting and sweating through their paw pads.', 'Dogs may remember up to 250 different places and people, and that they can even remember events from years ago.', 'Understanding a dog can be made easier if you pay close attention to their facial expressions, especially the movement of their ears. So, if you ever felt like your dog was judging you or giving you the side eye, you weren\'t seeing things, they probably meant it.'
+]
+
+var images = ['shibainu.png', 'AustShep.jpg', 'threeaust.jpg', 'beagle.jpg', 'corgiLeash.jpg', 'dogButt.jpg', 'DogPool.jpg', 'happyDog.jpg', 'kanni.jpg', 'pug.jpg', 'puppy.jpg', 'smallfreak.jpg'];
+
+function newFact() {
+    var randomNumber = Math.floor(Math.random() * (facts.length));
+    document.getElementById('bottom').innerHTML = facts[randomNumber];
+    var num = Math.floor(Math.random() * (images.length));
+    selectedImage = images[num];
+    document.getElementById('shower').src = `images/${selectedImage}`;
+}

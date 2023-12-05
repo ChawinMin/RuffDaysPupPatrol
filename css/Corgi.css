@@ -1,0 +1,87 @@
+.topnav {
+    background-color: #EDB7ED;
+    overflow: hidden;
+  }
+  
+.topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+.topnav a:hover {
+    background-color: #ddd;
+    color: white;
+  }
+  
+.topnav a.active {
+    background-color:  #ECEE81;
+    color: black;
+  }
+
+h1{
+  text-align: center;
+  color:#82A0D8;
+  font-size: 42px;
+}
+h2{
+  color:#82A0D8;
+  text-align: justify;
+}
+p{
+  font-size: 18px;
+}
+.Poem{
+  font-family: Indie Flower, Hind Siliguri, Oxygen;
+  text-align: justify;
+  margin: 50px auto;
+  width: 70%;
+}
+
+.Adopt{
+  font-family: Indie Flower, Hind Siliguri, Oxygen; 
+  text-align: justify;
+  margin: 50px auto;
+  width:70%;
+}
+
+body{
+  background-color: #8DDFCB;
+  min-height: 100vh;
+
+}
+
+head{
+  background-color: #82A0D8;
+}
+
+.CorgiAtbeach{
+  border-style: double;
+  border-color: black;
+  display: block;
+  float: left;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.CorgiSittingDown{
+  border-style: double;
+  border-color: black;
+  display: block;
+  float: left;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.images img{
+  margin: center 5px;
+  border-style: double;
+  border-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 10px;
+}

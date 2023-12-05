@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Dog breeds</title>
+    <div class="topnav">
+        <a class="active" href="homepage.html">Ruff Days</a>
+        <a href="DFindex.html">Fun Facts</a>
+        <a href="TrainDog.html">How to Train Your Dog</a>
+        <a href="Dog Jokes.html">Dog Jokes</a>
+        <a href="Corgi.html">The Corgi</a>
+        <a href="aboutpage.html">About Us</a>
+        <a href="vote_page_index.html">Vote</a>
+    </div>
+      <link rel="stylesheet" type="text/css" href="css/vote_page.css" />
+</head>
+<body>
+    <script src="JavaScript/vote_page.js"></script>
+   
+    <h1>What's your favorite dog breed?</h1>
+    <div id="content"></div>
+    <div id="page-container">    
+        <form name="bestBreed" action="" method="GET" autocomplete = "off">
+            <!-- Text input -->
+            <label for="name">Name:</label>
+            <input type="text" name="name" required><br><br>
+            <!-- Radio buttons -->
+            <label for="dog?">Do you have a dog?:</label>
+            <input type="radio" name="dog" id="yes" value="yes" required>
+            <label for="yes">Yes</label>
+            <input type="radio" name="dog" id="no" value="no" required>
+            <label for="no">No</label>
+
+            <!-- Dropdown -->
+            <label for="breed">What is your favorite dog breed? </label>
+            <select name="breed" id="breed" required>
+                <!-- <optgroup label="Select an option" ></optgroup> -->
+                <option disabled selected>Select an option</option>
+                <option value="Australian Shepherd">Australian Shepherd</option>
+                <option value="Basset Hound">Basset Hound</option>
+                <option value="Beagle">Beagle</option>
+                <option value="Bloodhound">Bloodhound</option>
+                <option value="Border Collie">Border Collie</option>
+                <option value="Boston Terrier">Boston Terrier</option>
+                <option value="Boxer">Boxer</option>
+                <option value="Bulldog">Bulldog</option>
+                <option value="Chihuahua">Chihuahua</option>
+                <option value="Cocker Spaniel">Cocker Spaniel</option>
+                <option value="Corgi">Corgi</option>
+                <option value="Dachshund">Dachshund</option>
+                <option value="Dalmation">Dalmation</option>
+                <option value="Dobermann">Dobermann</option>
+                <option value="German Shepherd">German Shepherd</option>
+                <option value="Golden Retriever">Golden Retriever</option>
+                <option value="Great Dane">Great Dane</option>
+                <option value="Greyhound">Greyhound</option>
+                <option value="Havanese">Havanese</option>
+                <option value="Labrador Retriever">Labrador Retriever</option>
+                <option value="Mastiff">Mastiff</option>
+                <option value="Miniature Schnauzer">Miniature Schnauzer</option>
+                <option value="Pomeranian">Pomeranian</option>
+                <option value="Poodle">Poodle</option>
+                <option value="Pug">Pug</option>
+                <option value="Rottweiler">Rottweiler</option>
+                <option value="Saint Bernard">Saint Bernard</option>
+                <option value="Shiba Inu">Shiba Inu</option>
+                <option value="Shih Tzu">Shih Tzu</option>
+                <option value="Siberian Husky">Siberian Husky</option>
+                <option value="Yorkshire Terrier">Yorkshire Terrier</option>
+            </select><br><br>
+
+            <!-- Submit button -->
+            <input type="submit" id="submit" value="Submit" onClick="testResults(this.form)" && onClick="lettersOnly(document.bestBreed.name)" disabled>
+        </form>
+
+
+
+    
+            
+        <div id="Results">  
+            <h2 id="title">Best doggos</h1>
+            <br><br>
+            <div id="list">
+                <ul>
+                    <li id="breed-list"></li>
+                    <li id="breed-list1"></li>
+                    <li id="breed-list2"></li>
+                </ul>
+
+            </div>
+            
+        </div>
+
+
+    </div>
+
+
+        
+        
+    
+    
+</body>
+</html>
